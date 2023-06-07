@@ -1,0 +1,82 @@
+/** @format */
+
+:root {
+	font-size: 16px;
+}
+
+input {
+	box-shadow: none !important;
+}
+
+#results {
+	background: #f3f3f3;
+	width: 100%;
+    height: fit-content;
+	max-height: 30vh;
+	overflow-y: auto;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 5px;
+}
+
+ul,
+li {
+	padding: 0;
+	list-style: none;
+}
+
+li:hover {
+	cursor: pointer;
+	background: #e1e1e1;
+}
+
+img {
+	width: 4rem;
+	height: 4rem;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
+h4 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: bold;
+}
+
+p {
+	font-size: 0.8rem;
+	margin: 0;
+	font-weight: lighter;
+}
+
+/* set color scroll */
+::-webkit-scrollbar {
+	width: 4px;
+	background-color: #464646;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #0d6efd;
+}
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+/* Handle on hover */
+.search {
+	width: 30%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+	.search {
+		width: 80%;
+	}
+}
